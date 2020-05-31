@@ -131,9 +131,9 @@ namespace LineWebHook.Controllers {
                             userInfo.Leave ();
                             break;
 
-                        // case "quiz":
-                        //     createQuiz (replyToken);
-                        //     break;
+                        case "quiz":
+                            createQuiz (replyToken);
+                            break;
 
                         default:
                             await replyUserMessageAsync (eventSource, replyToken, sourceType, messageText);
